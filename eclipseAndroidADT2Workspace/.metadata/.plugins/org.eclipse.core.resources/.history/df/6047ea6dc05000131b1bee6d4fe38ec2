@@ -1,0 +1,58 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	
+<!--     <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:onClick="displayMessage"
+        android:text="@string/display_message" />
+	
+ -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Hello CTTC"
+        android:textAppearance="?android:attr/textAlignment">
+    </TextView>
+    
+    <Button
+        android:id="@+id/button1"
+        android:background="#444444"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Search">
+        
+    </Button>
+    </TableRow>
+	
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+    <ExpandableListView
+	    android:id="@+id/laptop_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1" >
+	</ExpandableListView>
+    
+    </TableRow>
+
+
+
+</TableLayout>

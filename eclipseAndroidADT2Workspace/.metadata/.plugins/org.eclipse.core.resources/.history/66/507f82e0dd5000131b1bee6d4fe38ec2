@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".MainActivity" >
+	
+<!--     <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:onClick="displayMessage"
+        android:text="@string/display_message" />
+	
+ 
+	<include layout="@layout/title" android:id="@+id/title"/>-->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<!--     <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="cool" >
+    </EditText>
+     -->
+    <Button
+        android:id="@+id/button1"
+        android:background="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Locator"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+        
+    </Button>
+    <Button
+        android:id="@+id/button2"
+        android:background="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Item"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+        
+    </Button>
+    </TableRow>
+    <TableRow 
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button1"/>
+                    
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button2"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button3"/>
+                                <Button
+                    android:layout_width="wrapContent"
+                    android:layout_height="wrap_content"
+                    android:text="Button4"/>
+                                <Button
+                    android:layout_width="wrapContent"
+                    android:layout_height="wrap_content"
+                    android:text="Button5"/>
+                
+                </LinearLayout>
+            
+        </HorizontalScrollView>
+        
+        </TableRow>
+	
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+    <ExpandableListView
+	    android:id="@+id/laptop_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_margin="5dp"
+	    android:background="#FFF" >
+	</ExpandableListView>
+    
+    </TableRow>
+
+
+
+</TableLayout>
