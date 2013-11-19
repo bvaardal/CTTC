@@ -12,11 +12,37 @@
         android:allowBackup="true"
         android:icon="@drawable/cttc_badge_med"
         android:label="@string/app_name"
-        android:theme="@style/CustomActionBarTheme">
+        android:theme="@style/CustomActionBarTheme" >
+
         <!-- android:theme="@style/AppTheme" > -->
         <activity
             android:name="com.example.hellowworld.MainActivity"
             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hellowworld.StoreLocator"
+            android:label="@string/title_activity_store_locator"
+            android:parentActivityName="com.example.hellowworld.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hellowworld.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hellowworld.ScanItem"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_scan_item"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
