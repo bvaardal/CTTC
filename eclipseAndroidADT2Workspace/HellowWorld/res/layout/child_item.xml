@@ -11,12 +11,13 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:paddingLeft="25dp"/>
-    <ImageView
+<!--     <ImageView
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:src="@string/app_name"/>
+        android:src="@drawable/ic_delete"
+        android:contentDescription="@string/app_name"/> -->
     
 
 </RelativeLayout>
